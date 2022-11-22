@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
           ventajas. Se puede aplicar tanto a datos en listas lineales como en árboles binarios de búsqueda.
           método eficiente siempre que el vector esté ordenado.
+
+          https://es.stackoverflow.com/questions/407957/busqueda-binaria-recursiva
          */
 
     }
