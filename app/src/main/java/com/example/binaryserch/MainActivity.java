@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
          */
 
+
+
+    }
+    public void binarySerch(int num){
+
     }
 
 }
