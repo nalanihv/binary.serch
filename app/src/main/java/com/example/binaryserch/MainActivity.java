@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         Como la búsqueda binaria divide un problema a la mitad cada vez que se ejecuta,
         su complejidad es de O (log n), una de las más efectivas que podemos encontrar en algoritmos.
 
-       paradigma de  POO bien definido .
+      paradigma de  POO bien definido .
 
-        que hace:
+       que hace:
         La búsqueda binaria es un algoritmo eficiente para encontrar
         un elemento en una lista ordenada de elementos. Funciona al dividir
         repetidamente a la mitad la porción de la lista que podría contener al elemento,
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         la colección se ignoran justo después de la primera comparación.
 
 
-         Historia.
+        Historia.
          En 1962, Hermann Bottenbruch presentó en ALGOL 60 una implementación del algoritmo
          de búsqueda binaria en el cual colocaba la comparación de igualdad en el final del algoritmo,
          incrementando el número promedio de iteraciones por uno, pero reduciendo a uno el número de comparaciones por iteración.
@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
          Usando un enfoque recursivo
          Usando el método Arrays.binarySearch ().
 
-          ventajas.
+        ventajas.
            Se puede aplicar tanto a datos en listas lineales como en árboles binarios de búsqueda.
            método eficiente siempre que el vector esté ordenado.
           • La lista está ordenada por la clave de búsqueda
           • Se conoce el número de elementos
           • Se tiene acceso directo al elemento por posición en la lista
 
-          Proceso.
+        Proceso.
           1.En primer lugar es ordenar los elementos, ya que a partir de ese momento buscará por ubicación dentro de la lista de elementos.
           2.Lo siguiente que hace es validar si el número que sea la mitad del array coincide con el número buscado.
           3.En el caso que no coincida realiza la siguiente comparación. Si el elemento que buscamos es menos al elemento que está en medio del array
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-          FUNCION posicion_bin( L, clave)  /psecodigo    https://www.cartagena99.com/recursos/alumnos/apuntes/POOTema6-EstDatos.pdf
+         FUNCION posicion_bin( L, clave)  /psecodigo    https://www.cartagena99.com/recursos/alumnos/apuntes/POOTema6-EstDatos.pdf
           {
           tamtamaño_de_la_colección;
             inf0; //inf: limite inferior del intervalo
