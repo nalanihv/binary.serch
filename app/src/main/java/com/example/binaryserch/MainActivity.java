@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
           https://es.stackoverflow.com/questions/407957/busqueda-binaria-recursiva
           https://spa.myservername.com/binary-search-algorithm-java-implementation-examples.  busqueda ercursiva
           https://www.technodyan.com/busqueda-binaria-recursiva-en-java/ info
+          https://somoshackersdelaprogramacion.es/exploramos-en-profundidad-el-algoritmo-de-busqueda-binaria pasos
 
 
 
