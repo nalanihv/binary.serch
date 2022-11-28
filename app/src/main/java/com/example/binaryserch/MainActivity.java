@@ -6,10 +6,26 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BusquedaBinaria ob= new BusquedaBinaria();
+
+        int arr[] = { 1, 2, 3, 4, 5 };
+        int n = arr.length;
+        int x = 2;
+        int position = ob.busquedaRecursiva(arr, 0, n - 1, x);
+        if (position == -1)
+            System.out.println("Element not found !!!");
+        else
+            System.out.println("Element found at index: " + position);
+    }
+
 
         /* BIG O log
         Como la búsqueda binaria divide un problema a la mitad cada vez que se ejecuta,
@@ -63,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
           https://spa.myservername.com/binary-search-algorithm-java-implementation-examples.  busqueda ercursiva
           https://www.technodyan.com/busqueda-binaria-recursiva-en-java/ info
           https://somoshackersdelaprogramacion.es/exploramos-en-profundidad-el-algoritmo-de-busqueda-binaria pasos
+          https://www.delftstack.com/es/howto/java/java-binary-search-iterative-and-recursive/#algoritmo-de-b%25C3%25BAsqueda-binaria-recursiva   recursiva
 
 
 
