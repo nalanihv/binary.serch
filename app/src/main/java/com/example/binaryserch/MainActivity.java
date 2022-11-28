@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("Element not found !!!");
         else
             System.out.println("Element found at index: " + position);
+
+        int[] arreglo = {5, 7, 11, 20, 21, 25, 80, 85, 90, 95, 97, 98, 115, 500, 510, 512, 1024};
+        int busqueda = 500;
+
+        int indiceDelElementoBuscado = ob.busquedaMetodos(arreglo, busqueda);
+        System.out.println("[Con ciclo While] -- El elemento buscado (" + String.valueOf(busqueda) + ") se encuentra en el index " + indiceDelElementoBuscado);
+
+
     }
 
 
@@ -76,10 +84,11 @@ public class MainActivity extends AppCompatActivity {
           elemento.
 
           https://es.stackoverflow.com/questions/407957/busqueda-binaria-recursiva
-          https://spa.myservername.com/binary-search-algorithm-java-implementation-examples.  busqueda ercursiva
-          https://www.technodyan.com/busqueda-binaria-recursiva-en-java/ info
-          https://somoshackersdelaprogramacion.es/exploramos-en-profundidad-el-algoritmo-de-busqueda-binaria pasos
+          https://spa.myservername.com/binary-search-algorithm-java-implementation-examples.                                                      busqueda ercursiva
+          https://www.technodyan.com/busqueda-binaria-recursiva-en-java/                                                                          info
+          https://somoshackersdelaprogramacion.es/exploramos-en-profundidad-el-algoritmo-de-busqueda-binaria                                      pasos
           https://www.delftstack.com/es/howto/java/java-binary-search-iterative-and-recursive/#algoritmo-de-b%25C3%25BAsqueda-binaria-recursiva   recursiva
+          https://parzibyte.me/blog/2018/10/31/busqueda-binaria-arreglos-java/#Busqueda_binaria_recursiva_en_Java_arreglo_numerico                codigo
 
 
 
@@ -109,4 +118,3 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-}
