@@ -3,18 +3,29 @@ package com.example.binaryserch;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
-
+    private EditText etText;
+    private TextView textView;
+    private Button btAgregar;
+    private  Button btMostrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BusquedaBinaria ob= new BusquedaBinaria();
+
+        btAgregar=findViewById(R.id.btAgregar);
+        btMostrar=findViewById(R.id.btMostrar);
+        etText=findViewById(R.id.etText);
+        textView=findViewById(R.id.textView);
+
+        //agregar listas enlazadas
 
         int arr[] = { 1, 2, 3, 4, 5 };
         int n = arr.length;
@@ -25,15 +36,13 @@ public class MainActivity extends AppCompatActivity {
         else
             System.out.println("Element found at index: " + position);
 
+
         int[] arreglo = {5, 7, 11, 20, 21, 25, 80, 85, 90, 95, 97, 98, 115, 500, 510, 512, 1024};
         int busqueda = 500;
-
         int indiceDelElementoBuscado = ob.busquedaMetodos(arreglo, busqueda);
         System.out.println("[Con ciclo While] -- El elemento buscado (" + String.valueOf(busqueda) + ") se encuentra en el index " + indiceDelElementoBuscado);
 
-
     }
-
 
         /* BIG O log
         Como la búsqueda binaria divide un problema a la mitad cada vez que se ejecuta,
@@ -114,7 +123,5 @@ public class MainActivity extends AppCompatActivity {
 
 
          */
-
-
 
     }
